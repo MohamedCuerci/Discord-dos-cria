@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+.dale {
+    background-color: #404eed;
+}
+
+.icone {
+    padding-left: 50px;
+    margin-left: 100px;
+    color: white;
+}
+
+.butao-usuario {
+    padding-right: 50px;
+    margin-right: 100px;
+}
+
+.btn {
+    border-radius: 25px 25px;
+}
+
+.btn:hover {
+    box-shadow: 3px 3px 3px black;
+}
+
+.dcria {
+    color: white;
+}
+
+.link-menu:hover {
+    text-decoration: underline;
+}

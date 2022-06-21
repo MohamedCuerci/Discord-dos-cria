@@ -1,0 +1,21 @@
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom dale">
+    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+      <i class="fa-brands fa-discord fa-3x icone"></i>
+      <h5 class="dcria">Discord dos cria</h5>
+    </a>
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="#" class="nav-link px-3 link-light link-menu">Home</a></li>
+      <li><a href="#" class="nav-link px-3 link-light link-menu">Features</a></li>
+      <li><a href="#" class="nav-link px-3 link-light link-menu">Pricing</a></li>
+      <li><a href="#" class="nav-link px-3 link-light link-menu">FAQs</a></li>
+      <li><a href="#" class="nav-link px-3 link-light link-menu">About</a></li>
+    </ul>
+    <div class="col-md-3 text-end butao-usuario">
+      <% if current_user %>
+        <%= link_to "Sair", destroy_user_session_path, data: { turbo_method: :delete, turbo_confim: "tem certeza ?" }, class: "btn btn-light botao-link"%>
+      <% else %>
+        <%= link_to "Login", new_user_session_path, class: "btn btn-light botao-link"%>
+        <%= link_to "Nova conta", new_user_registration_path, class: "btn btn-light botao-link"%>
+      <% end %>
+    </div>
+</header>
