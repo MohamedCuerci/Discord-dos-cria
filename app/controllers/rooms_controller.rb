@@ -4,6 +4,7 @@ class RoomsController < ApplicationController
   def index
     @room = Room.new
     @rooms = Room.public_rooms
+    #@single_room = Room.find(params[:id])
     @users = User.all_except(current_user)
   end
 
@@ -12,9 +13,12 @@ class RoomsController < ApplicationController
   end
 
   def show
+    @current_user = current_user
     @single_room = Room.find(params[:id])
-    @room = Room.public_rooms
+    @rooms = Room.public_rooms
     @users = User.all_except(@current_user)
-    #@room = Room.new
+    @room = Room.new
+
+    render "index"
   end
 end

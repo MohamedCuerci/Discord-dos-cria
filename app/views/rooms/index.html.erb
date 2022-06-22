@@ -26,6 +26,8 @@
     </div>
     <div class="col-md-1"></div>
     <div class="col-md-9 bg-dark chat">
-        O chat box esta aki!
+        <% if @single_room %>
+            <h4 class="text-center text-light"><%= @single_room.name %></h4><hr class="linha-room">
+        <% end %>
     </div>
 </div>
