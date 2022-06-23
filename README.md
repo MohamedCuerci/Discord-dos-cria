@@ -17,7 +17,7 @@
 ```
 
 ### imagem
-<img src="./app/images/discord-dos-cria.png" alt="imagem projeto"/>
+<img src="/home/cuerci/Documentos/Projeto_teste_rails/chat-projeto/turbochat/app/assets/images/discord-dos-cria (cópia).png" alt="imagem projeto"/>
 
 obs: este projeto é um versão do discord edição paraguai com recursos limitados e preguiça de fazer um frontend bonito kkkkk.
 
