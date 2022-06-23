@@ -1,24 +1,24 @@
-# README
+## Aplicativo de bate-papo em tempo real no Rails usando ActionCable
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Objetivos desse projeto
+- praticar minhas habilidas com relacionamento entre modelos
+- autenticação com devise
+- aprender sobre ActionCable.
 
-Things you may want to cover:
+### principais gemas utilizadas
+```
+  ruby "3.0.4"
+  rails "7.0.3"
+  gem "stimulus-rails"
+  gem "devise"
+  gem "turbo-rails"
+  gem "stimulus-rails"
+  gem "sqlite3"
+```
 
-* Ruby version
+### imagem
+<img src="./app/images/discord-dos-cria.png" alt="imagem projeto"/>
 
-* System dependencies
+obs: este projeto é um versão do discord edição paraguai com recursos limitados e preguiça de fazer um frontend bonito kkkkk.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+obs2: assim que eu tiver tempo sobrando, vou ir melhorando esse projeto.
