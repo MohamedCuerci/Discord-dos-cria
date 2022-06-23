@@ -69,3 +69,36 @@ body {
 .linha-room {
     color: white;
 }
+
+.msg-form {
+    //position: fixed;
+    bottom: 0;
+    //width: 90%;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    align-items: end;
+    //align-content: space-between;
+}
+
+.col-md-9 {
+    //height: 100vh;
+    overflow: scroll;
+}
+
+.msg-content {
+    width: 80%;
+    margin-right: 5px;
+}
+
+.message-box {
+    word-wrap: break-word;
+    width: fit-content;
+    max-width: 40%;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #555555;
+    padding: 10px;
+}
+

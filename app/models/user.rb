@@ -5,5 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   scope :all_except, -> (user) { where.not(id: user)}
   #isso vai listar todos os usuarios on, menos o usuario logado
+
   after_create_commit { broadcast_append_to "users" }
+
+  has_many :messages
 end
