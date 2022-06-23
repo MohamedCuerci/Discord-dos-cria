@@ -1,9 +1,8 @@
-<h1>Rooms#index</h1>
-<p>Find me in app/views/rooms/index.html.erb</p>
+<h1>Menu</h1>
 
 <div class="row">
     <div class="col-md-2 bg-dark text-light tabela-user-room"><br>
-        <h5>logado como: <%= @current_user.email %></h5><hr>
+        <p>logado como: <%= @current_user.email %></p><hr>
 
         <h4>Usuarios on</h4>
         <div>
@@ -31,7 +30,6 @@
         <% if @single_room %>
             <div id="single_room">
                 <h4 class="text-center text-light"><%= @single_room.name %></h4><hr class="linha-room">
-                <%# o cara colocou @user.email %>
 
                 <%= turbo_stream_from @single_room %>
                 <div id="messages">
@@ -44,3 +42,5 @@
         <% end %>
     </div>
 </div>
+<br>
+<br>
